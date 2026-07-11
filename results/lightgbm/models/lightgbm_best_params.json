@@ -1,0 +1,14 @@
+{
+  "best_params": {
+    "colsample_bytree": 0.8238450602706812,
+    "learning_rate": 0.02009366785915685,
+    "max_depth": 8,
+    "min_child_samples": 12,
+    "n_estimators": 458,
+    "num_leaves": 25,
+    "reg_alpha": 5.107473025775658,
+    "reg_lambda": 4.17411003148779,
+    "subsample": 0.6110539052353652
+  },
+  "best_cv_score": 0.8879782944821601
+}

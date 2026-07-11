@@ -1,0 +1,21 @@
+{
+    "dataset": "wells_iqr.csv",
+    "features": [
+        "GR",
+        "RT90",
+        "RHOB",
+        "NPHI"
+    ],
+    "target": "DT",
+    "test_well_screening": "3-BRSA-1163-SES",
+    "dataset_justification": "IQR filter improves R² by +0.0237 on average and RMSE by -0.3875 µs/ft",
+    "features_justification": "CALI systematically degrades R² (11.76% on average, 10/10 algorithms)",
+    "top_algorithms": [
+        "LGBMRegressor",
+        "HistGradientBoostingRegressor",
+        "XGBRegressor",
+        "RandomForestRegressor"
+    ],
+    "algorithms_excluded_note": "MLPRegressor, SVR, GradientBoostingRegressor, and NuSVR also ranked in the top 8 by R², but SVR/NuSVR were excluded due to prohibitive runtime (>1200s) in LOWO with 32 wells; MLPRegressor and GradientBoostingRegressor were excluded in favor of the four tree-based methods carried forward to LOWO.",
+    "generated_at": "2026-06-20T15:30:35"
+}

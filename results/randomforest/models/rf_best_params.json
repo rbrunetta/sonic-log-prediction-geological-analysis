@@ -1,0 +1,11 @@
+{
+  "best_params": {
+    "bootstrap": true,
+    "max_depth": 10,
+    "max_features": 0.6914634373768949,
+    "min_samples_leaf": 3,
+    "min_samples_split": 7,
+    "n_estimators": 330
+  },
+  "best_cv_score": 0.8877588120425581
+}

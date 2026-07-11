@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura do Projeto - sonic_log_prediction</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .tree {
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            line-height: 1.8;
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            overflow-x: auto;
+        }
+        
+        .folder {
+            color: #667eea;
+            font-weight: bold;
+        }
+        
+        .file {
+            color: #2c3e50;
+        }
+        
+        .comment {
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        
+        .important {
+            background: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            color: #856404;
+        }
+        
+        .legend {
+            margin-top: 30px;
+            padding: 20px;
+            background: #e3f2fd;
+            border-radius: 10px;
+            border-left: 4px solid #2196f3;
+        }
+        
+        .legend h3 {
+            color: #1976d2;
+            margin-bottom: 15px;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .legend-icon {
+            width: 30px;
+            height: 30px;
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        
+        .folder-icon {
+            background: #667eea;
+            color: white;
+        }
+        
+        .file-icon {
+            background: #95a5a6;
+            color: white;
+        }
+        
+        .important-icon {
+            background: #f39c12;
+            color: white;
+        }
+        
+        .paths {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f0f4f8;
+            border-radius: 10px;
+        }
+        
+        .paths h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        
+        .path-item {
+            background: white;
+            padding: 12px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border-left: 3px solid #667eea;
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+        }
+        
+        .path-label {
+            color: #667eea;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .container {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📁 sonic_log_prediction</h1>
+            <p>Estrutura Completa do Projeto</p>
+        </div>
+        
+        <div class="content">
+            <div class="tree">
+<span class="folder">sonic_log_prediction/</span>                    <span class="comment">← Raiz do projeto</span>
+│
+├── <span class="folder">data/</span>                               <span class="comment">← Dados do projeto</span>
+│   ├── <span class="folder">raw/</span>                            <span class="comment">← Dados originais (nunca modificar)</span>
+│   │   ├── <span class="folder">LAS/</span>                        <span class="comment">← Arquivos .las dos poços</span>
+│   │   │   ├── <span class="file">1-BRSA-1013-SES.las</span>
+│   │   │   ├── <span class="file">3-BRSA-1163-SES.las</span>
+│   │   │   └── <span class="file">...</span>
+│   │   └── <span class="file">README.md</span>                <span class="comment">← Descrição dos dados</span>
+│   │
+│   └── <span class="folder">processed/</span>                      <span class="comment">← Dados prontos para ML</span>
+│       ├── <span class="file important">wells.csv</span>             <span class="comment">← Sem filtro IQR</span>
+│       └── <span class="file important">wells_iqr.csv</span>         <span class="comment">← Com filtro IQR</span>
+│
+├── <span class="folder">sonic_ml_utils/</span>                     <span class="comment">← Biblioteca customizada</span>
+│   ├── <span class="file important">__init__.py</span>              <span class="comment">← Inicialização da biblioteca</span>
+│   ├── <span class="file important">plotting.py</span>              <span class="comment">← Funções de plotagem</span>
+│   ├── <span class="file important">statistics.py</span>            <span class="comment">← Funções estatísticas</span>
+│   ├── <span class="file">preprocessing.py</span>          <span class="comment">← Pré-processamento (opcional)</span>
+│   │
+│   └── <span class="folder">configs/</span>                        <span class="comment">← Configurações</span>
+│       ├── <span class="file">__init__.py</span>
+│       └── <span class="file important">config_curves.json</span>   <span class="comment">← Config das curvas</span>
+│
+├── <span class="folder">notebooks/</span>                          <span class="comment">← Jupyter notebooks</span>
+│   ├── <span class="file important">01_exploratory_analysis.ipynb</span>
+│   ├── <span class="file important">02_lazypredict_screening.ipynb</span>
+│   ├── <span class="file important">03_xgboost_lowo.ipynb</span>
+│   ├── <span class="file important">04_lgbm_lowo.ipynb</span>
+│   ├── <span class="file important">05_random_forest_lowo.ipynb</span>
+│   ├── <span class="file important">06_model_comparison.ipynb</span>
+│   └── <span class="file">README.md</span>                <span class="comment">← Ordem de execução</span>
+│
+├── <span class="folder">results/</span>                            <span class="comment">← Resultados dos modelos</span>
+│   ├── <span class="folder">figures/</span>                        <span class="comment">← Gráficos e visualizações</span>
+│   │   ├── <span class="folder">xgboost/</span>
+│   │   ├── <span class="folder">lgbm/</span>
+│   │   ├── <span class="folder">random_forest/</span>
+│   │   └── <span class="folder">comparison/</span>
+│   │
+│   ├── <span class="folder">metrics/</span>                        <span class="comment">← Métricas em CSV</span>
+│   │   ├── <span class="file">xgboost_metrics.csv</span>
+│   │   ├── <span class="file">lgbm_metrics.csv</span>
+│   │   └── <span class="file">comparison_summary.csv</span>
+│   │
+│   ├── <span class="folder">models/</span>                         <span class="comment">← Modelos treinados salvos</span>
+│   │   ├── <span class="file">xgboost_best.pkl</span>
+│   │   └── <span class="file">lgbm_best.pkl</span>
+│   │
+│   └── <span class="folder">predictions/</span>                    <span class="comment">← Predições salvas</span>
+│       └── <span class="file">test_predictions.csv</span>
+│
+├── <span class="folder">scripts/</span>                            <span class="comment">← Scripts Python standalone (opcional)</span>
+│   ├── <span class="file">train_xgboost.py</span>
+│   └── <span class="file">train_lgbm.py</span>
+│
+├── <span class="folder">tests/</span>                              <span class="comment">← Testes unitários (opcional)</span>
+│   ├── <span class="file">__init__.py</span>
+│   ├── <span class="file">test_plotting.py</span>
+│   └── <span class="file">test_statistics.py</span>
+│
+├── <span class="folder">docs/</span>                               <span class="comment">← Documentação adicional (opcional)</span>
+│   ├── <span class="file">methodology.md</span>
+│   └── <span class="file">api_reference.md</span>
+│
+├── <span class="file important">.gitignore</span>                       <span class="comment">← Arquivos a ignorar no Git</span>
+├── <span class="file important">README.md</span>                        <span class="comment">← Documentação principal</span>
+├── <span class="file important">requirements.txt</span>                 <span class="comment">← Dependências Python</span>
+├── <span class="file">environment.yml</span>                 <span class="comment">← Ambiente Conda</span>
+├── <span class="file important">setup.py</span>                         <span class="comment">← Instalação da biblioteca</span>
+├── <span class="file">LICENSE</span>                         <span class="comment">← Licença MIT</span>
+└── <span class="file">CITATION.cff</span>                    <span class="comment">← Para citação acadêmica</span>
+            </div>
+            
+            <div class="legend">
+                <h3>📖 Legenda</h3>
+                <div class="legend-item">
+                    <div class="legend-icon folder-icon">📁</div>
+                    <div><strong>Pastas</strong> - Diretórios do projeto</div>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-icon file-icon">📄</div>
+                    <div><strong>Arquivos</strong> - Arquivos do projeto</div>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-icon important-icon">⭐</div>
+                    <div><strong>Destacados</strong> - Arquivos essenciais/importantes</div>
+                </div>
+            </div>
+            
+            <div class="paths">
+                <h3>🔗 Caminhos Relativos nos Notebooks</h3>
+                <div class="path-item">
+                    <span class="path-label">Dados Raw:</span>
+                    ../data/raw/LAS/
+                </div>
+                <div class="path-item">
+                    <span class="path-label">Dados Processados:</span>
+                    ../data/processed/wells.csv
+                </div>
+                <div class="path-item">
+                    <span class="path-label">Salvar Figuras:</span>
+                    ../results/figures/xgboost/minha_figura.png
+                </div>
+                <div class="path-item">
+                    <span class="path-label">Salvar Métricas:</span>
+                    ../results/metrics/xgboost_metrics.csv
+                </div>
+                <div class="path-item">
+                    <span class="path-label">Salvar Modelos:</span>
+                    ../results/models/xgboost_best.pkl
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

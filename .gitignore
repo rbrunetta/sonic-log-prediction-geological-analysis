@@ -1,0 +1,84 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+.installed.cfg
+*.egg
+build/
+dist/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+
+# Local backup archive (kept outside repo)
+*_local_archive.zip
+
+# Claude AI session files
+.claude/
+
+# ── DATA ─────────────────────────────────────────────────────────────────────
+# Intermediate processed files (reproducible from main dataset)
+data/processed/bkp/
+data/processed/wells_data.csv
+data/processed/wells_no_iqr.csv
+data/processed/wells_iqr.csv
+
+# ── RESULTS: FIGURES ─────────────────────────────────────────────────────────
+# Per-well figures for each algorithm (reproducible by running notebooks)
+results/*/figures/
+results/atlas/
+results/lithology/
+results/logs/
+
+# Large comparison / empirical figures (reproducible from nb10, nb13)
+results/comparison/figures/
+results/empirical/figures/
+
+# ── RESULTS: EXPERIMENTAL / ARCHIVE ──────────────────────────────────────────
+results/archive/
+results/nn_experiments/
+results/rhg_calibrado/
+
+# MLP training history JSON (large)
+results/mlp/history/
+
+# ── INTERNAL / BACKUP ────────────────────────────────────────────────────────
+bkp/
+sonic_ml_utils/bkp/
+docs/contextos/
+REESTRUTURACAO_PROJETO.md
+translate_annotations.py
+
+# Portuguese version of notebooks (used only for PT figure generation)
+notebooks/pt-br/
+
+# Stray preview/temp files
+*.txt
+
+# Temporary files
+*.tmp
+*.bak
+*.log

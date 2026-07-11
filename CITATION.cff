@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: "Brunetta"
+    given-names: "Rodrigo"
+    email: "rbrunetta.colab@gmail.com"
+title: "Sonic Log Prediction using Machine Learning — Sergipe-Alagoas Basin"
+version: 1.0.0
+date-released: 2026-07-11
+url: "https://github.com/rbrunetta/sonic_log_prediction"
+abstract: >
+  A benchmark study comparing 9 methods (XGBoost, LightGBM, HistGradientBoosting,
+  Random Forest, MLP, CNN-1D, Gardner, Wyllie, RHG) for DT sonic log prediction
+  using Leave-One-Well-Out (LOWO) validation across 27 wells in the
+  Sergipe-Alagoas Basin, Brazil. Developed as part of a PhD thesis in Geophysics
+  at Universidade Federal de Sergipe.
+keywords:
+  - sonic log prediction
+  - machine learning
+  - well log analysis
+  - seismic-to-well tie
+  - XGBoost
+  - Sergipe-Alagoas Basin
+  - LOWO validation
+license: MIT
+preferred-citation:
+  type: software
+  authors:
+    - family-names: "Brunetta"
+      given-names: "Rodrigo"
+  title: "Sonic Log Prediction using Machine Learning — Sergipe-Alagoas Basin"
+  year: 2026
+  url: "https://github.com/rbrunetta/sonic_log_prediction"
