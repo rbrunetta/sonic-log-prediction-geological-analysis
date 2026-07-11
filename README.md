@@ -1,25 +1,22 @@
 # Sonic Log Prediction using Machine Learning
 
-> PhD thesis project — Geophysics | Universidade Federal de Sergipe  
-> Benchmark study for automated well-to-seismic tie in the Sergipe-Alagoas Basin, Brazil
+> PhD thesis project — Geology | Universidade Federal do Paraná  
+> Benchmark of ML methods for sonic log prediction under LOWO validation in the Sergipe-Alagoas Basin, Brazil
 
 ## Overview
 
-This repository accompanies a doctoral thesis in Geophysics investigating the prediction of sonic logs (DT, µs/ft) from standard petrophysical curves (GR, RT90, RHOB, NPHI) using Machine Learning. The study benchmarks 9 prediction methods under Leave-One-Well-Out (LOWO) validation across 27 wells in the Sergipe-Alagoas Basin.
+This repository accompanies a doctoral thesis in Geophysics benchmarking 9 methods for sonic log (DT, µs/ft) prediction from standard petrophysical curves (GR, RT90, RHOB, NPHI). Models are evaluated under Leave-One-Well-Out (LOWO) validation across 27 wells in the Sergipe-Alagoas Basin, followed by a geological hypothesis framework (H1–H8) linking prediction error to geological factors.
 
 **Key results (mean LOWO R²):**
 
-| Method | R² |
-|---|---|
-| HistGradientBoosting | 0.73 |
-| LightGBM | 0.73 |
-| Random Forest | 0.73 |
-| XGBoost | 0.69 |
-| MLP | 0.52 |
-| CNN-1D | 0.36 |
-| RHG (empirical) | −1.81 |
-| Wyllie (empirical) | −6.33 |
-| Gardner (empirical) | −285.92 |
+| Method | Category | R² (mean) |
+|---|---|---|
+| XGBoost | Machine Learning | 0.7973 |
+| HistGradientBoosting | Machine Learning | 0.7971 |
+| LightGBM | Machine Learning | 0.7944 |
+| Random Forest | Machine Learning | 0.7930 |
+| MLP | Neural Network | 0.6956 |
+| CNN-1D | Neural Network | 0.6764 |
 
 ## Repository Structure
 
@@ -84,7 +81,6 @@ The processed dataset (`data/processed/wells_iqr_with_lithology.csv`) was built 
 | `NPHI` | Neutron porosity (pu) |
 | `DT` | Sonic log — target variable (µs/ft) |
 | `Lithology` | Interpreted lithology |
-| `DT_gardner` / `DT_wyllie` / `DT_rhg` | Empirical predictions |
 
 Dominant lithology: 83% shale, 17% other. Depth range: ~2,000–6,000 m.
 
@@ -181,5 +177,5 @@ MIT License — see [LICENSE](LICENSE) for details.
 ## Author
 
 **Rodrigo Brunetta**  
-PhD candidate in Geophysics | Universidade Federal de Sergipe  
-rbrunetta.colab@gmail.com
+PhD candidate in Geology | Universidade Federal do Paraná  
+rodrigobrunetta@ufpr.br
