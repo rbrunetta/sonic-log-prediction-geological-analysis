@@ -36,9 +36,6 @@ Thumbs.db
 # Local backup archive (kept outside repo)
 *_local_archive.zip
 
-# Claude AI session files
-.claude/
-
 # ── DATA ─────────────────────────────────────────────────────────────────────
 # Intermediate processed files (reproducible from main dataset)
 data/processed/bkp/
@@ -72,7 +69,6 @@ docs/
 scripts/
 tests/
 REESTRUTURACAO_PROJETO.md
-CLAUDE.md
 translate_annotations.py
 
 # Results not published

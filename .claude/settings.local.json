@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C \"e:\\\\GitHub\\\\sonic_log_prediction\" status)",
+      "Bash(ls:*)",
+      "Bash(python -c:*)",
+      "Bash(python _translate_02.py)",
+      "PowerShell(python -c $script)",
+      "PowerShell(python E:\\\\GitHub\\\\sonic_log_prediction\\\\translate_nb09.py)",
+      "Bash(python -c \" *)",
+      "PowerShell(python \"C:\\\\temp\\\\translate_nb.py\" 2>&1)"
+    ],
+    "additionalDirectories": [
+      "C:\\temp"
+    ]
+  }
+}
