@@ -62,13 +62,8 @@ sonic_log_prediction/
 │   ├── randomforest/
 │   ├── mlp/
 │   ├── cnn/
-│   ├── empirical/                 # Gardner, Wyllie, RHG
-│   ├── comparison/                # Cross-method metrics and tables
-│   └── directional/
+│   └── comparison/                # Cross-method metrics and tables
 │
-├── scripts/
-├── tests/
-├── docs/
 ├── environment.yml                # Conda environment (name: geo)
 ├── requirements.txt
 ├── setup.py
@@ -99,8 +94,8 @@ Dominant lithology: 83% shale, 17% other. Depth range: ~2,000–6,000 m.
 
 ```bash
 # Clone the repository
-git clone https://github.com/rbrunetta/sonic_log_prediction.git
-cd sonic_log_prediction
+git clone https://github.com/rbrunetta/sonic-log-prediction-geological-analysis.git
+cd sonic-log-prediction-geological-analysis
 
 # Create conda environment (recommended)
 conda env create -f environment.yml

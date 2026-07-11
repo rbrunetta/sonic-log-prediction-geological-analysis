@@ -68,9 +68,16 @@ results/mlp/history/
 # ── INTERNAL / BACKUP ────────────────────────────────────────────────────────
 bkp/
 sonic_ml_utils/bkp/
-docs/contextos/
+docs/
+scripts/
+tests/
 REESTRUTURACAO_PROJETO.md
+CLAUDE.md
 translate_annotations.py
+
+# Results not published
+results/empirical/
+results/directional/
 
 # Portuguese version of notebooks (used only for PT figure generation)
 notebooks/pt-br/
