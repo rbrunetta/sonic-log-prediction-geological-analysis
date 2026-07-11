@@ -5,7 +5,7 @@
 
 ## Overview
 
-This repository accompanies a doctoral thesis in Geophysics benchmarking 9 methods for sonic log (DT, µs/ft) prediction from standard petrophysical curves (GR, RT90, RHOB, NPHI). Models are evaluated under Leave-One-Well-Out (LOWO) validation across 27 wells in the Sergipe-Alagoas Basin, followed by a geological hypothesis framework (H1–H8) linking prediction error to geological factors.
+This repository accompanies a doctoral thesis in Geology benchmarking 9 methods for sonic log (DT, µs/ft) prediction from standard petrophysical curves (GR, RT90, RHOB, NPHI). Models are evaluated under Leave-One-Well-Out (LOWO) validation across 27 wells in the Sergipe-Alagoas Basin, followed by a geological hypothesis framework (H1–H8) linking prediction error to geological factors.
 
 **Key results (mean LOWO R²):**
 
