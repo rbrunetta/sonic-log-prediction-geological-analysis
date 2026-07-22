@@ -89,3 +89,4 @@ notebooks/pt-br/
 *.tmp
 *.bak
 *.log
+*.exe
