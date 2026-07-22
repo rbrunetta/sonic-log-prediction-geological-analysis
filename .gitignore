@@ -68,6 +68,7 @@ sonic_ml_utils/bkp/
 docs/
 scripts/
 tests/
+.claude/
 REESTRUTURACAO_PROJETO.md
 translate_annotations.py
 
