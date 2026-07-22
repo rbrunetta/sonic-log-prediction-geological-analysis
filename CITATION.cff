@@ -4,21 +4,20 @@ authors:
   - family-names: "Brunetta"
     given-names: "Rodrigo"
     email: "rbrunetta.colab@gmail.com"
-title: "Sonic Log Prediction using Machine Learning — Sergipe-Alagoas Basin"
+title: "Multi-Algorithm Benchmark for Compressional Sonic Log Prediction in the Sergipe-Alagoas Basin: A Geological Hypothesis Testing Framework for Model Failure Diagnosis"
 version: 1.0.0
 date-released: 2026-07-11
-url: "https://github.com/rbrunetta/sonic_log_prediction"
+url: "https://github.com/rbrunetta/sonic-log-prediction-geological-analysis"
 abstract: >
-  A benchmark study comparing 9 methods (XGBoost, LightGBM, HistGradientBoosting,
-  Random Forest, MLP, CNN-1D, Gardner, Wyllie, RHG) for DT sonic log prediction
+  A benchmark study comparing 6 methods (XGBoost, LightGBM, HistGradientBoosting,
+  Random Forest, MLP, CNN-1D) for DT sonic log prediction
   using Leave-One-Well-Out (LOWO) validation across 27 wells in the
-  Sergipe-Alagoas Basin, Brazil. Developed as part of a PhD thesis in Geophysics
-  at Universidade Federal de Sergipe.
+  Sergipe-Alagoas Basin, Brazil. Developed as part of a PhD thesis in Geology
+  at Universidade Federal do Parana (UFPR).
 keywords:
   - sonic log prediction
   - machine learning
   - well log analysis
-  - seismic-to-well tie
   - XGBoost
   - Sergipe-Alagoas Basin
   - LOWO validation
@@ -28,6 +27,6 @@ preferred-citation:
   authors:
     - family-names: "Brunetta"
       given-names: "Rodrigo"
-  title: "Sonic Log Prediction using Machine Learning — Sergipe-Alagoas Basin"
+  title: "Multi-Algorithm Benchmark for Compressional Sonic Log Prediction in the Sergipe-Alagoas Basin: A Geological Hypothesis Testing Framework for Model Failure Diagnosis"
   year: 2026
-  url: "https://github.com/rbrunetta/sonic_log_prediction"
+  url: "https://github.com/rbrunetta/sonic-log-prediction-geological-analysis"
