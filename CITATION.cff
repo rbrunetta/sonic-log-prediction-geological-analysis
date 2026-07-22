@@ -4,6 +4,9 @@ authors:
   - family-names: "Brunetta"
     given-names: "Rodrigo"
     email: "rbrunetta.colab@gmail.com"
+  - family-names: "Danielski Aquino"
+    given-names: "Carolina"
+    email: "carolina.aquino@ufpr.br"
 title: "Multi-Algorithm Benchmark for Compressional Sonic Log Prediction in the Sergipe-Alagoas Basin: A Geological Hypothesis Testing Framework for Model Failure Diagnosis"
 version: 1.0.0
 date-released: 2026-07-11
@@ -27,6 +30,8 @@ preferred-citation:
   authors:
     - family-names: "Brunetta"
       given-names: "Rodrigo"
+    - family-names: "Danielski Aquino"
+      given-names: "Carolina"
   title: "Multi-Algorithm Benchmark for Compressional Sonic Log Prediction in the Sergipe-Alagoas Basin: A Geological Hypothesis Testing Framework for Model Failure Diagnosis"
   year: 2026
   url: "https://github.com/rbrunetta/sonic-log-prediction-geological-analysis"
