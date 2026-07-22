@@ -36,6 +36,9 @@ Thumbs.db
 # Local backup archive (kept outside repo)
 *_local_archive.zip
 
+# IDE / tool settings
+.claude/
+
 # ── DATA ─────────────────────────────────────────────────────────────────────
 # Intermediate processed files (reproducible from main dataset)
 data/processed/bkp/
