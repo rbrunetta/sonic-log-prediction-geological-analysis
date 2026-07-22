@@ -162,9 +162,9 @@ If you use this code or dataset in your research, please cite:
 ```bibtex
 @software{brunetta2026sonic,
   author = {Brunetta, Rodrigo},
-  title  = {Sonic Log Prediction using Machine Learning — Sergipe-Alagoas Basin},
+  title  = {Multi-Algorithm Benchmark for Compressional Sonic Log Prediction in the Sergipe-Alagoas Basin: A Geological Hypothesis Testing Framework for Model Failure Diagnosis},
   year   = {2026},
-  url    = {https://github.com/rbrunetta/sonic_log_prediction}
+  url    = {https://github.com/rbrunetta/sonic-log-prediction-geological-analysis}
 }
 ```
 
